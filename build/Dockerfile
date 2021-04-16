@@ -21,8 +21,5 @@ RUN pip install -r /root/requirements.txt
 RUN pip3 install -r /root/requirements.txt
 RUN rm /root/requirements.txt
 
-WORKDIR /root/catkin_ws
-RUN catkin build
 RUN echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
 RUN echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-RUN source ~/.bashrc
