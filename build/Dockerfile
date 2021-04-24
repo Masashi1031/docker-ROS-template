@@ -1,5 +1,6 @@
 FROM nvidia/cudagl:10.1-devel-ubuntu18.04
 
+ARG DEBIAN_FRONTEND=noninteractive
 RUN ln -fs /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
 RUN apt-get update 
