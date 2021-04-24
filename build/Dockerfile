@@ -17,7 +17,7 @@ RUN rosdep init
 RUN rosdep update
 RUN mkdir -p ~/catkin_ws/src
 
-COPY requirement.txt /root/
+COPY requirements.txt /root/
 RUN pip install -r /root/requirements.txt
 RUN pip3 install -r /root/requirements.txt
 RUN rm /root/requirements.txt
