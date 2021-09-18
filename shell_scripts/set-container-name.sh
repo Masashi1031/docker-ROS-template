@@ -32,10 +32,10 @@ read name
 if yes_or_no "Do you want to change the name of container $name?"; then
     echo "yes"
     change_container_name $name
-    chmod 777 ../run.sh
-    chmod 777 ../start.sh
-    chmod 777 ../stop.sh
-    chmod 777 ../exec.sh
+    chmod 700 ../run.sh
+    chmod 700 ../start.sh
+    chmod 700 ../stop.sh
+    chmod 700 ../exec.sh
 else
     echo "Aborted"
 fi
