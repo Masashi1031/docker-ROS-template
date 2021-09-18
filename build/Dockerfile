@@ -30,5 +30,5 @@ RUN pip install -r /root/requirements.txt
 RUN pip3 install -r /root/requirements.txt
 RUN rm /root/requirements.txt
 
-RUN echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 RUN echo "source /root/ros2_ws/install/local_setup.bash" >> ~/.bashrc
