@@ -20,7 +20,7 @@ RUN sh -c 'echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/key
 RUN apt-get update
 RUN apt-get install -y ros-foxy-desktop
 RUN apt-get install -y ~nros-foxy-rqt* ros-foxy-gazebo-ros-pkgs
-RUN apt-get -y python3-colcon-common-extensions python3-rosdep
+RUN apt-get install -y python3-colcon-common-extensions python3-rosdep
 RUN rosdep init
 RUN rosdep update
 RUN mkdir -p /root/ros2_ws/src
